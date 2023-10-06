@@ -16,11 +16,9 @@
 <body>
   
   <div id="app">
-    <!-- IN LINEA -->
-    <h1>{{emails.join(', ')}}</h1>
-    <!-- IN LISTA -->
-    <ul v-for="email in emails">
-      <li>{{email}}</li>
+
+    <ul v-if="emails.length == emailRequest">
+      <li v-for="email in emails">{{email}}</li>
     </ul>
   </div>
 
