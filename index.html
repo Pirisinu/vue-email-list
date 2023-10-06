@@ -15,7 +15,14 @@
 </head>
 <body>
   
-  <div id="app"></div>
+  <div id="app">
+    <!-- IN LINEA -->
+    <h1>{{emails.join(', ')}}</h1>
+    <!-- IN LISTA -->
+    <ul v-for="email in emails">
+      <li>{{email}}</li>
+    </ul>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
