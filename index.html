@@ -16,8 +16,9 @@
 <body>
   
   <div id="app">
-
-    <ul v-if="emails.length == emailRequest">
+    <h1>Email generate</h1>
+    <h2 v-if="emails.length < emailRequest">Loading...</h2>
+    <ul v-else>
       <li v-for="email in emails">{{email}}</li>
     </ul>
   </div>
